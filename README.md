@@ -1,9 +1,9 @@
 This enables the syntax highlighting for [Cython](https://github.com/cython/cython) in the `nano` editor.
-It works on files with `.pyx`, `.pxd` or `.pxi` as extensions.
+It works on files with `pyx`, `pxd` or `pxi` as files extensions.
 
 ### Note
 
-+ Some of the keywords might not be usable in files of some particular types (For example, `def` cannot be used in `.pxd` files), but are still highlighted.
++ Some of the keywords might not be usable in files of some particular files types (For example, `def` cannot be used in `.pxd` files), but are still highlighted.
 
 ### References
 

@@ -1,0 +1,38 @@
+# Syntax highlighting for Cython
+
+syntax cython "\.(pyx|pxd|pxi)$"
+comment "#"
+
+# Keywords
+color brightblue "\<(def|cdef|cpdef|ctypedef|if|elif|else|return|yield|for|while|break|continue|pass)\>"
+color brightblue "\<(include|import|cimport|from|extern|try|except|finally|raise|global|nonlocal)\>"
+color brightblue "\<(assert|async|await|with|lambda|as|namespace|in|class|cppclass|and|or|not|del)\>"
+color brightblue "\<(noexcept|is|new|packed|struct|union|enum|fused|inline|gil|nogil|readonly|public|api)\>"
+color brightyellow "\<(True|False)\>"
+color brightmagenta "\<None\>"
+
+# Words reserved
+color brightmagenta "\<(NULL)\>"
+
+# Deprecated
+#   Python keywords:
+color brightblue  "\<print($|\s)"
+color brightblue  "\<exec\s"
+#   Cython keywords:
+color brightcyan  "\<(DEF|IF|ELIF|ELSE)\>"
+color brightblue  "\<(by|property)\>"
+
+# Types and type qualifiers
+color green "\<(const|volatile)\>"
+color green "\<(signed|unsigned|char|short|long|int|float|double|bint|Py_ssize_t)\>"
+#   It isn't explicitly stated in the documentation whether `double` is supported. However, it appears in many of the code examples in the documentation.
+
+# Comments
+color sky "#.*"
+
+# Strings
+#   This assumes unicode strings by default.
+color brightyellow "(\<[FUfu])?("([^\\"]|\\([abfnrtv\\'"]|[0-7]{3}|x([0-9]|[a-f]){2}|u([0-9]|[a-f]){4}|U([0-9]|[a-f]){8}|N\{.+\}))*"|'([^\\']|\\([abfnrtv\\'"]|[0-7]{3}|x([0-9]|[a-f]){2}|u([0-9]|[a-f]){4}|U([0-9]|[a-f]){8}|N\{.+\}))*')|\<[Bb]("([^\\"]|\\([abfnrtv\\'"]|[0-7]{3}|x([0-9]|[a-f]){2}))*"|'([^\\']|\\([\\abfnrtv\\'"]|[0-7]{3}|x([0-9]|[a-f]){2}))*')|\<([BFUbfu][Rr]|[Rr][BFbf]?)("([^\\"]|\\.)*"|'([^\\"]|\\.)*')"
+#   The prefix "ru" is not found in any version of Python documentation, nor is it explicitly allowed by the Cython documentation. Thus not highlighted.
+color brightyellow start="(\<([BFUbfu][Rr]?|[Rr][BFbf]?))?"""" end="""""
+color brightyellow start="(\<([BFUbfu][Rr]?|[Rr][BFbf]?))?'''" end="'''"

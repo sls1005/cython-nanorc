@@ -1,5 +1,5 @@
 This enables the syntax highlighting for [Cython](https://github.com/cython/cython) in the `nano` editor.
-It works on files with `pyx`, `pxd` or `pxi` as file extensions.
+It works on files whose names end with `.pyx`, `.pxd` or `.pxi`.
 
 ### Note
 

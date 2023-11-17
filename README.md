@@ -3,7 +3,7 @@ It works on files with `pyx`, `pxd` or `pxi` as file extensions.
 
 ### Note
 
-+ Some of the keywords might not be usable in files of some particular files types (For example, `def` cannot be used in `.pxd` files), but are still highlighted.
++ Some of the keywords might not be usable in files of some particular file types (For example, `def` cannot be used in `.pxd` files), but are still highlighted.
 
 ### References
 

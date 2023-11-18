@@ -10,6 +10,7 @@ color brightblue "\<(assert|async|await|with|lambda|as|namespace|in|class|cppcla
 color brightblue "\<(noexcept|is|new|packed|struct|union|enum|fused|inline|gil|nogil|readonly|public|api)\>"
 color brightyellow "\<(True|False)\>"
 color brightmagenta "\<None\>"
+#  Soft-keywords like `match`, `case`, and `type` aren't supported. Thus not highlighted.
 
 # Words reserved
 color brightmagenta "\<(NULL)\>"

@@ -33,7 +33,7 @@ color sky "#.*"
 
 # Strings
 #   This assumes unicode strings by default.
-color brightyellow "(\<[FUfu])?("([^\\"]|\\([abfnrtv\\'"]|[0-7]{3}|x([0-9]|[a-f]){2}|u([0-9]|[a-f]){4}|U([0-9]|[a-f]){8}|N\{.+\}))*"|'([^\\']|\\([abfnrtv\\'"]|[0-7]{3}|x([0-9]|[a-f]){2}|u([0-9]|[a-f]){4}|U([0-9]|[a-f]){8}|N\{.+\}))*')|\<[Bb]("([^\\"]|\\([abfnrtv\\'"]|[0-7]{3}|x([0-9]|[a-f]){2}))*"|'([^\\']|\\([\\abfnrtv\\'"]|[0-7]{3}|x([0-9]|[a-f]){2}))*')|\<([BFUbfu][Rr]|[Rr][BFbf]?)("([^\\"]|\\.)*"|'([^\\']|\\.)*')"
-#   The prefix "ru" is not found in any version of Python documentation, nor is it explicitly allowed by the Cython documentation. Thus not highlighted.
+color brightyellow "(\<[FUfu])?("([^\\"]|\\([abfnrtv\\'"]|[0-7]{3}|x([0-9]|[A-Fa-f]){2}|u([0-9]|[A-Fa-f]){4}|U([0-9]|[A-Fa-f]){8}|N\{.+\}))*"|'([^\\']|\\([abfnrtv\\'"]|[0-7]{3}|x([0-9]|[A-Fa-f]){2}|u([0-9]|[A-Fa-f]){4}|U([0-9]|[A-Fa-f]){8}|N\{.+\}))*')|\<[Bb]("([^\\"]|\\([abfnrtv\\'"]|[0-7]{3}|x([0-9]|[A-Fa-f]){2}))*"|'([^\\']|\\([\\abfnrtv\\'"]|[0-7]{3}|x([0-9]|[A-Fa-f]){2}))*')|\<([BFUbfu][Rr]|[Rr][BFbf]?)("([^\\"]|\\.)*"|'([^\\']|\\.)*')"
+#   The prefix "ru" is not found in any version of Python documentation, nor is it explicitly allowed by the Cython documentation. So it's not highlighted.
 color brightyellow start="(\<([BFUbfu][Rr]?|[Rr][BFbf]?))?"""" end="""""
 color brightyellow start="(\<([BFUbfu][Rr]?|[Rr][BFbf]?))?'''" end="'''"
